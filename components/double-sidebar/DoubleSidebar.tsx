@@ -1,4 +1,3 @@
-// components/double-sidebar/DoubleSidebar.tsx
 "use client";
 
 import { Menu } from "lucide-react";

@@ -1,4 +1,3 @@
-// app/(protected)/components/sidebar/services/navigationService.ts
 import { useRouter } from "next/navigation";
 import { MenuItem, SubMenuItem } from "../config/menuConfig";
 import { useSidebar } from "../SidebarProvider";

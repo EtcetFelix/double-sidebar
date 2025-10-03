@@ -1,4 +1,3 @@
-// app/(protected)/randotest/components/SidebarMenu.tsx
 "use client";
 
 import {

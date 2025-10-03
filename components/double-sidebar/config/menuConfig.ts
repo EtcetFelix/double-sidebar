@@ -1,4 +1,3 @@
-// app/(protected)/components/sidebar/config/menuConfig.ts
 import {
   Blocks,
   Calendar,

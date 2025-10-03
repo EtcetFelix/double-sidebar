@@ -1,4 +1,3 @@
-// app/(protected)/randotest/components/SidebarProvider.tsx
 "use client";
 
 import { createContext, ReactNode, useCallback, useContext, useEffect, useRef, useState } from "react";

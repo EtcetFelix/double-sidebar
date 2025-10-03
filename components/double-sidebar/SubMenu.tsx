@@ -1,4 +1,3 @@
-// app/(protected)/components/sidebar/SubMenu.tsx
 "use client";
 
 import { MenuItem } from "./config/menuConfig";
