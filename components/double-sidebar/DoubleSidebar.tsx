@@ -56,16 +56,12 @@ export function DoubleSidebar({ isAdmin, footer }: DoubleSidebarProps) {
     <div className="relative w-16 h-full flex-shrink-0">
       <div
         ref={sidebarRef}
-        className={`${
-          isExpanded ? 'fixed left-0 top-0 z-50' : 'relative z-10'
-        } h-full`}
+        className={`transition-all duration-300 ease-out ${
+          isExpanded ? 'fixed left-0 top-0 z-50 h-screen w-64' : 'relative z-10 h-full w-16'
+        }`}
       >
         {/* Main Sidebar */}
-        <div
-          className={`h-full bg-background border-r border-border transition-all duration-300 ease-out ${
-            isExpanded ? "w-64" : "w-16"
-          }`}
-        >
+        <div className="h-full bg-background border-r border-border">
           <div className="h-full overflow-y-auto flex flex-col">
             {/* Fixed Header Space */}
             <div className="flex-none p-4 border-b border-border h-[88px] flex flex-col justify-center">
