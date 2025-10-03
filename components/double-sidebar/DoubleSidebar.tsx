@@ -1,10 +1,9 @@
-// app/(protected)/components/sidebar/DoubleSidebar.tsx
+// components/double-sidebar/DoubleSidebar.tsx
 "use client";
 
 import { Menu } from "lucide-react";
 import * as React from "react";
 import { getMenuItemById, getMenuItemsForUser } from "./config/menuConfig";
-import { NavUserContainer } from "./higherlevel/nav-user-container";
 import { MenuItem } from "./MenuItem";
 import { SidebarFooter } from "./SidebarFooter";
 import { useSidebar } from "./SidebarProvider";
@@ -12,9 +11,10 @@ import { SubMenu } from "./SubMenu";
 
 interface DoubleSidebarProps {
   isAdmin: boolean;
+  footer?: React.ReactNode;
 }
 
-export function DoubleSidebar({ isAdmin, user, onSignOut }: DoubleSidebarProps) {
+export function DoubleSidebar({ isAdmin, footer }: DoubleSidebarProps) {
   const {
     isOpen,
     isExpanded,
@@ -28,7 +28,7 @@ export function DoubleSidebar({ isAdmin, user, onSignOut }: DoubleSidebarProps) 
 
   const [hoveredIcon, setHoveredIcon] = React.useState<string | null>(null);
 
-  // Filter menu items based on admin status (resolved server-side)
+  // Filter menu items based on admin status
   const filteredMenuItems = React.useMemo(() => 
     getMenuItemsForUser(isAdmin), 
     [isAdmin]
@@ -96,9 +96,9 @@ export function DoubleSidebar({ isAdmin, user, onSignOut }: DoubleSidebarProps) 
             </div>
 
             {/* Sticky Footer */}
-            {footerConfig.enabled && (
+            {footerConfig.enabled && footer && (
               <SidebarFooter showDivider={footerConfig.showDivider} className={footerConfig.className}>
-                <NavUserContainer />
+                {footer}
               </SidebarFooter>
             )}
           </div>
