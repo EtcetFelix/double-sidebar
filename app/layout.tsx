@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { DoubleSidebar } from "@/components/double-sidebar/DoubleSidebar";
+import { SidebarProvider } from "@/components/double-sidebar/SidebarProvider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,11 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <SidebarProvider>
+        <DoubleSidebar isAdmin={false}/>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          {children}
+        </body>
+      </SidebarProvider>
     </html>
   );
 }
