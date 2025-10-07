@@ -27,7 +27,7 @@ import {
   useSidebar,
 } from "../SidebarProvider"
 
-import { signout } from "@/app/actions/signout"
+// import { signout } from "@/app/actions/signout"
 
 export function NavUser({
   user,
