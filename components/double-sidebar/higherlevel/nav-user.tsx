@@ -127,14 +127,14 @@ export function NavUser({
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator /> */}
-            <DropdownMenuItem asChild>
+            {/* <DropdownMenuItem asChild>
               <form action={signout}>
                 <button className="flex w-full items-center">
                   <LogOut className="mr-2 h-4 w-4" />
                   Log out
                 </button>
               </form>
-            </DropdownMenuItem>
+            </DropdownMenuItem> */}
           </DropdownMenuContent>
         </DropdownMenu>
       </SidebarMenuItem>
