@@ -24,16 +24,8 @@ export default function Home() {
           <section>
             <h2 className="text-2xl font-semibold mb-2">Try it out</h2>
             <p className="text-muted-foreground">
-              Hover over the sidebar on the left to expand it. Click on menu items with 
-              arrows to see sub-navigation. The footer shows user information with a dropdown menu.
+              Hover over the sidebar on the left to expand it. The footer shows authenticated user information with a dropdown menu (not shown in this demo).
             </p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-semibold mb-2">Installation</h2>
-            <pre className="bg-muted p-4 rounded-lg overflow-x-auto">
-              <code>pnpm add @yourpackage/double-sidebar</code>
-            </pre>
           </section>
 
           <section>
