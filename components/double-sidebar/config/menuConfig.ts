@@ -40,20 +40,20 @@ export const menuItems: MenuItem[] = [
         id: "meeting-reminders", 
         title: "Meeting Reminders", 
         icon: Calendar, 
-        href: "/meeting-reminders"
+        href: "/"
       },
       { 
         id: "video-campaigns", 
         title: "Video Campaigns", 
         icon: Video, 
-        href: "/send-campaigns",
+        href: "/",
         adminOnly: true // Mark as admin-only
       },
       { 
         id: "generations", 
         title: "Video Generations", 
         icon: Clapperboard, 
-        href: "/campaigns",
+        href: "/",
         adminOnly: true // Mark as admin-only
       },
     ],
@@ -67,19 +67,19 @@ export const menuItems: MenuItem[] = [
         id: "sequences", 
         title: "Sequences", 
         icon: Send, 
-        href: "/outreach-campaigns"
+        href: "/"
       },
       { 
         id: "product-profiles", 
         title: "Product Profiles", 
         icon: Blocks, 
-        href: "/product-profiles"
+        href: "/"
       },
       { 
         id: "client-list", 
         title: "Client List", 
         icon: UserCheck, 
-        href: "/saved-prospects"
+        href: "/"
       },
     ],
   },
@@ -87,7 +87,7 @@ export const menuItems: MenuItem[] = [
     id: "settings",
     title: "Settings",
     icon: Settings,
-    href: "/settings"
+    href: ""
   },
 ];
 
